@@ -7,16 +7,13 @@
           <p class="p0">Realiser Votre</p>
           <p class="p1">Bilan Nutritionnel</p>
           <p class="p0">Gratuitement</p>
-          <button class="btn0"><a href="#bas1" style="text-decoration: none;"><p class="p2">commencer mon bilan</p></a></button></div>
+          <button class="btn0"><p class="p2">commencer mon bilan</p></button></div>
 
         </div>
         <div class="col-md-6"><img src="assets/consult1.jpg" class="walp1"></div>
       </div>
     </div>
   </div>
-
-
-
 
   <!--Partie 2-->
   <div class="cont1">
@@ -35,9 +32,6 @@
 
     </div>
   </div>
-
-
-
 
   <!--partie 3 "cards"-->
   <div class="cont2">
@@ -85,8 +79,6 @@
   </div>
 
   <!--partie 4 formuaire-->
-
-
   <div id="bas1">
     <div class="formulaire">
       <div class="container">
@@ -171,8 +163,6 @@
 
               <!-- email-->
               <div class="form-group">
-                <label>Email</label>
-                <!-- class binding-->
                 <div class="form-group">
                   <label>Email</label>
                   <input type="email"  class="form-control" id="email" name="email" required autocomplete="off"  >
@@ -182,25 +172,35 @@
 
 
               <button  class="btn btn2 btn-primary" type="submit" [disabled]="!nutritionForm.form.valid" >Submit form </button>
+              <div *ngIf="showSuccessMessage" class="alert alert-success" role="alert">
+                Le formulaire est envoyé... Merci!
+              </div>
             </form>
+
+
           </div>
+
           <div class="col-md-4">
             <img src="assets/plat2.jpg" class="plat1">
           </div>
         </div>
       </div>
     </div>
+
+
   </div>
 
-
-  <!--  partie 5 : repas -->
+  <!--  partie 5 : commentaire -->
   <div class="container">
 
     <div class="container recipee">
       <div class="row justify-content-center">
         <div class="column-content">
-
-          <h2 class="repas1">Liste de Healthy Repas : </h2>
+          <!-- nutrition.component.html -->
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+          <h2 class="repas1"> Les avis : </h2>
           <ul class="r1">
             <ul class="r11" *ngFor="let REPAS of RECIPE">
               <button class="r22" [class.selected]="REPAS === selectedrepas" type="button" (click)="onSelect(REPAS)">
@@ -208,17 +208,43 @@
               </button>
             </ul>
           </ul>
-          <div class="recette" *ngIf=" selectedrepas">
-            <h2>{{ selectedrepas.name}} Details</h2>
-            <div class="recette1">Recette : {{ selectedrepas.text}}</div>
-
+              </div>
+        <div class="col-md-6 recette">
+          <div  *ngIf=" selectedrepas">
+            <h2>{{ selectedrepas.name}} </h2>
+            <div class="recette1">Avis : {{ selectedrepas.text}}</div>
+            <img src="assets/comnt.png" class="cmnt1">
           </div>
+          </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6"></div>
+              <div class="col-md-6">
+          <button class="add-comment-button ajout-comment r22" (click)="showCommentForm()">Ajouter un commentaire</button>
+
+          <!--ajouter un commentaire-->
+          <div *ngIf="showForm">
+            <form (submit)="addComment()">
+              <label for="name">Nom:</label>
+              <input type="text" id="name" name="name" [(ngModel)]="newComment.name" required>
+
+              <label for="text">Avis:</label>
+              <textarea id="text" name="text" [(ngModel)]="newComment.text" required></textarea>
+
+              <button type="submit" class="r22">Ajouter</button>
+            </form>
+          </div>
+              </div>
+
         </div>
       </div>
     </div>
   </div>
 
-  <!--partie 6-->
+  <!--partie 6 : newzz-->
   <div class="newz">
     <div class="container">
       <div>
@@ -230,12 +256,12 @@
 
       </div>
       <form #nutritionForm="ngForm" (ngSubmit)="onSubmit(nutritionForm)">
-        <input type="text" value="Votre prenom" class="input1"><br>
-        <input type="text" value="Votre e-mail" class="input1"><br>
+        <input type="text" placeholder="Votre prenom" class="input1"><br>
+        <input type="text" placeholder="Votre e-mail" class="input1"><br>
         <input type="submit" value="C'est parti !" class="submit1">
       </form>
     </div>
   </div>
-
-
 </div>
+
+

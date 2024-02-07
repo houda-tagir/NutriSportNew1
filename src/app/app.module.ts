@@ -17,6 +17,7 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import { MenueComponent } from './menue/menue.component';
 import { SigninComponent } from './signin/signin.component';
 import { NutritionComponent } from './nutrition/nutrition.component';
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -32,18 +33,28 @@ import { NutritionComponent } from './nutrition/nutrition.component';
     CallComponent,
     AcceuilComponent,
     MenueComponent,
-    SigninComponent
+    SigninComponent,
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormulaireComponent,
     routing,
-    NutritionComponent
+    FormsModule,
+    NutritionComponent,
+    NutritionComponent,
+
 
   ],
   providers: [
     provideClientHydration()
+  ],
+  exports: [
+
+
   ],
   bootstrap: [AppComponent]
 })

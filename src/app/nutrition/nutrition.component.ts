@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import {Component, NgModule} from '@angular/core';
 import {FormsModule, NgForm} from "@angular/forms";
 import {JsonPipe, NgClass, NgForOf, NgFor, NgIf} from "@angular/common";
-import { OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {repas} from "../repas";
 import {RECIPE} from '../recipe';
+
+
+
+
 @Component({
   selector: 'app-nutrition',
   standalone: true,
@@ -14,11 +16,18 @@ import {RECIPE} from '../recipe';
     JsonPipe,
     NgFor,
     NgClass,
-    NgIf
+    NgIf,
+
+
+
   ],
   templateUrl: './nutrition.component.html',
   styleUrl: './nutrition.component.css'
 })
+
+
+
+
 export class NutritionComponent  {
   REPAS: repas = {
     name: 'Windstorm',
@@ -102,12 +111,19 @@ export class NutritionComponent  {
   submitted = false;
   model: any;
 
+  showSuccessMessage: boolean = false;
 
   onSubmit(form: NgForm){
     // Set submitted to true to indicate form submission
     this.submitted = true;
     // Now you can access user data from this.userData
     console.log('Submitted Data:', form.value);
+    this.showSuccessMessage = true;
+
+    // Rafraîchir la page après un délai de 2 secondes
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000);
     // Here, you can perform further actions such as sending the data to a server
   }
 
@@ -115,7 +131,22 @@ export class NutritionComponent  {
 
   protected readonly RECIPE = RECIPE;
   selectedrepas?: repas;
+  showForm: boolean = false;
+  newComment: repas = { name: '', text: '' };
   onSelect(REPAS: repas) {
-    this.selectedrepas = REPAS;
+    this.selectedrepas = REPAS;
+
+  }
+  showCommentForm() {
+    this.showForm = true;
+  }
+
+  addComment() {
+    if (this.newComment.name && this.newComment.text) {
+      this.RECIPE.push(this.newComment);
+      this.newComment = { name: '', text: '' };
+      this.showForm = false;
+    }
   }
 }
+
