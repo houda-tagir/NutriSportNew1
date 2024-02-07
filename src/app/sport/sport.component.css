@@ -1,0 +1,81 @@
+#ecto,#meso,#endo
+{
+    display: none;
+}
+
+#ecto:checked + label img,#meso:checked + label img,#endo:checked + label img
+{
+    border: 2px solid green;
+}
+textarea {
+    resize: none;
+    border-radius:1rem ;
+    border-style: dashed;
+    border-width: 2px;
+    padding: 0.5rem;
+
+  }
+select
+{
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border-style: dashed;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input{
+    border-radius: 1rem;
+    border-style: dashed;
+    padding: 0.5rem;
+}
+input[type=submit]
+{
+    border-style: solid;
+}
+.build{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius:20px ;
+}
+form{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius:20px ;
+}
+.card
+{
+    transition :all 0.3s;
+}
+.card:hover
+{
+    transform :scale(1.05);
+    box-shadow: 26px 32px 22px -18px rgba(0,0,0,0.42);
+}
+.animation
+{
+    transition :all 0.3s;
+}
+.animation:hover
+{
+    transform :scale(1.02);
+}
+
+
+
+
+
+
+  
+  
+
+
+
+  

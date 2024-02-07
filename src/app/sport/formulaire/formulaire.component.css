@@ -1,0 +1,101 @@
+#ecto,#meso,#endo
+{
+    display: none;
+}
+
+#ecto:checked + label img,#meso:checked + label img,#endo:checked + label img
+{
+    border: 2px solid green;
+}
+textarea {
+    resize: none;
+    border-radius:1rem ;
+    border-style: dashed;
+    border-width: 2px;
+    padding: 0.5rem;
+
+  }
+select
+{
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border-style: dashed;
+}
+/* Chrome, Safari, Edge, Opera */
+ input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox*/
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input{
+    border-radius: 1rem;
+    border-style: dashed;
+    padding: 0.5rem;
+} 
+input[type=submit]
+{
+    border-style: solid;
+}
+.build{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius:20px ;
+}
+form{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius:20px ;
+}
+.animation
+{
+    transition :all 0.3s;
+}
+.animation:hover
+{
+    transform :scale(1.02);
+}
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #6c757d;
+    --bs-btn-border-color: #6c757d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #5c636a;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #565e64;
+    --bs-btn-active-border-color: #51585e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c757d;
+    --bs-btn-disabled-border-color: #6c757d;
+  }
+  .btn-reserver {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #bbe659;
+    --bs-btn-border-color: #bbe659;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #b3ff00;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #565e64;
+    --bs-btn-active-border-color: #51585e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c757d;
+    --bs-btn-disabled-border-color: #6c757d;
+  }
+  input[type=radio]
+  {
+    display: none;
+  }
+  #Femme:checked + label,#Homme:checked + label
+  {
+    background-color:green;
+    color: #fff;
+  }

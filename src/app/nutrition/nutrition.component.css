@@ -1,0 +1,262 @@
+body{
+  overflow-x: hidden;
+}
+
+.nutrition{ background: rgba(252, 250, 245, 0.55);}
+/*partie 1 */
+.container-with-background{
+  background: rgba(252, 250, 245, 0.55);
+  margin-top: 5px;
+  height: 450px;
+}
+.l1{
+  margin-top: 50px;
+}
+.p1{
+  font-size: 55px;
+  font-family: "Regular Brush";
+  position:relative;
+  color: #59874e;
+  text-decoration: underline;
+}
+.p0{
+  margin-top: 18px;
+  font-size: 51px;
+  font-family: "Demand";
+  color: rgb(213, 194, 187);
+  text-shadow: 2px 2px 4px #59874e ;
+}
+.btn0{
+  background: rgba(175, 161, 157, 0.66);
+  border-radius: 12px;
+  margin-top: 32px;
+  border-color:  rgba(175, 161, 157, 0.66);
+  transition:  0.2s;
+}
+.btn0:hover {
+  transform: scale(1.05);
+}
+.p2{
+  font-family: "Demand";
+  color: rgba(89, 135, 78, 0.82);
+  font-size: 21px;
+}
+.walp1{
+  border-radius: 20px;
+  margin-top: 37px;
+  box-shadow: 10px 5px 5px 5px rgba(210, 206, 200, 0.91);
+}
+
+/*partie 2*/
+.tit2{
+  color: white;
+  text-decoration: underline dotted white;
+  font-family: "Demand";
+  font-size: 25px;
+}
+.walp2{
+  border-radius: 40%;
+  height : 270px;
+  margin-top: 37px;
+  box-shadow: 10px 5px 5px 5px rgba(210, 206, 200, 0.91);
+}
+.cont1{
+  background-image: url('/assets/walp3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 20px;
+  height:auto;
+  margin-top: 8px;
+  box-shadow: 10px 5px 5px 5px #59874e;
+}
+
+.p3{
+  font-size: 19px;
+  margin-top: 30px;
+}
+.p4{
+  font-size: 18px;
+  margin-top: 59px;
+  margin-left: 55px;
+}
+
+/*partie 3*/
+.tit3{
+  margin-top: 18px;
+  margin-bottom: 18px;
+  font-size: 48px;
+  font-family: "Demand";
+  color: rgb(213, 194, 187);
+  text-shadow: 2px 2px 4px #59874e ;
+}
+.card{
+  height:250px;
+  width: auto;
+  background: rgba(236, 215, 204, 0.22);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.tit4{
+  font-family:  Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 8px;
+  margin-right: 5px;
+  color: rgba(63, 98, 56, 0.87);
+}
+.p5{
+  font-family:  Arial, Helvetica, sans-serif;
+  color: #59874e ;
+  font-size: 15px;
+  margin-left: 8px;
+  margin-right: 5px;
+}
+.cont2{
+  padding: 20px;
+  height:auto;
+  margin-top: 5px;
+}
+
+/*partie formulaire*/
+
+
+/*partie 5*/
+.newz{
+  background-image: url('/assets/walp8.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  height:auto;
+  margin-top: 8px;
+}
+.newstxt1 {
+  font-size: 30px;
+  color: rgb(145, 136, 131);
+  text-decoration: underline dotted rgba(252, 250, 245, 0.55) ;
+  font-size: 25px;
+}
+.newstxt2{
+  font-family: Bahnschrift;
+  color:rgba(63, 98, 56, 0.87);
+}
+.input1{
+  width: 200px; /* Ajustez la largeur selon vos préférences */
+  border-radius: 8px;
+  border: 2px solid rgb(145, 136, 131);
+  background-image: url('/assets/walp8.jpg');
+  background-size: cover;
+  margin-left:0px;
+  margin-right:10px; /* Ajustez la marge à votre convenance */
+  margin-bottom: 8px;
+  margin-top: 8px;
+  color:rgba(63, 98, 56, 0.87);
+}
+
+.submit1{
+  width: 150px; /* Ajustez la largeur selon vos préférences */
+  border-radius: 8px;
+  border: 1px solid ;
+  background:rgba(63, 98, 56, 0.87);
+  margin-left:0px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  color: rgb(252, 240, 237);
+  text-align: center;
+  font-size: 15px; /* Ajustez la taille de la police selon vos préférences */
+  transition:  0.2s;
+}
+
+.submit1:hover {
+  transform: scale(1.05);
+}
+
+
+/*partie formulaire*/
+/*parti 4*/
+.formulaire{
+  background:rgba(63, 98, 56, 0.87);
+  padding: 20px;
+  margin-top: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.plat1{
+  width: 580px;
+  height: 1000px;
+  margin-top: -20px;
+}
+
+/* Styles pour les cases d'entrée du formulaire */
+input,
+select,
+textarea {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 8px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #D1E9C6;
+  border-radius: 8px; /* Ajout du border-radius de 8px */
+  box-sizing: border-box;
+  background-color: rgba(232, 245, 225, 0.63);
+}
+
+/* Styles pour le bouton de soumission */
+.btn2 {
+  background:rgba(63, 98, 56, 0.87);
+  color: rgb(252, 240, 237);
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 10px 5px 5px 5px rgba(63, 98, 56, 0.45);
+  transition:  0.2s;
+}
+.btn2:hover {
+  transform: scale(1.05);
+}
+
+.repas1{
+  margin-top: 18px;
+  margin-bottom: 18px;
+  font-size: 48px;
+  font-family: "Demand";
+  color: rgb(213, 194, 187);
+  text-shadow: 2px 2px 4px #59874e ;
+}
+
+
+.r22{
+  transition:  0.2s;
+  background: rgba(175, 161, 157, 0.66);
+  border-radius: 12px;
+  margin-top: 32px;
+  border-color:  rgba(175, 161, 157, 0.66);
+
+}
+.r22:hover {
+  transform: scale(1.05);
+
+}
+
+.recette1{
+  height:250px;
+  width: auto;
+  background: rgba(236, 215, 204, 0.22);
+  border-radius: 8px;
+}
+
+.recette{ margin-top: 18px;
+  margin-bottom: 18px;
+  font-size: 30px;
+  font-family: "Demand";
+  color:black;
+  text-shadow: 2px 2px 4px #59874e ;
+}

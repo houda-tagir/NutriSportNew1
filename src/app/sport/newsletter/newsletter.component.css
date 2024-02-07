@@ -1,0 +1,59 @@
+.newz{
+
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height:auto;
+    margin-top: 8px;
+  }
+  .newstxt1 {
+    font-size: 30px;
+    color: rgb(145, 136, 131);
+    text-decoration: underline dotted rgba(252, 250, 245, 0.55) ;
+    font-size: 25px;
+  }
+  .newstxt2{
+    font-family: Bahnschrift;
+    color:rgba(63, 98, 56, 0.87);
+  }
+  .input1{
+    width: 200px; /* Ajustez la largeur selon vos préférences */
+    border-radius: 8px;
+    border: 2px solid rgb(145, 136, 131);
+    background-size: cover;
+    margin-left:0px;
+    margin-right:10px; /* Ajustez la marge à votre convenance */
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color:rgba(63, 98, 56, 0.87);
+  }
+
+  .submit1{
+    width: 150px; /* Ajustez la largeur selon vos préférences */
+    border-radius: 8px;
+    border: 1px solid ;
+    background:rgba(63, 98, 56, 0.87);
+    margin-left:0px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: rgb(252, 240, 237);
+    text-align: center;
+    font-size: 15px; /* Ajustez la taille de la police selon vos préférences */
+    transition:  0.2s;
+  }
+
+  .submit1:hover {
+    transform: scale(1.05);
+  }
+  input
+{
+  width: 100%;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 8px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #D1E9C6;
+  border-radius: 8px; /* Ajout du border-radius de 8px */
+  box-sizing: border-box;
+  background-color: rgba(232, 245, 225, 0.63);
+}

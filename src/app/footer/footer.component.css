@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background:linear-gradient(to right,#b3e17f,#c5e99d);
+    height: 70px;  
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

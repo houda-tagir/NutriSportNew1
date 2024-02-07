@@ -1,0 +1,87 @@
+<h1 class="text-center  mx-0 px-0 mb-3">Reserver une seance</h1>
+    <div class="row border-5 animation">
+    <form align="center" style="text-align: center;" class="shadow col-5 w-50" [formGroup]="ReservForm">
+        <div class="container">
+        <legend>RESERVATION</legend>
+        <div class="row justify-content-center ">
+            <div class="col-4">
+                <label for="Nom">Nom: </label>
+                <input type="text" name="" id="Nom" placeholder="Nom*" required formControlName="Nom">
+                
+            </div>
+            <div class="col-4">
+                <label for="Prenom">Prenom : </label>
+                <input type="text" name="" id="Prenom" placeholder="Prenom*" required formControlName="Prenom">
+            </div>
+        </div>
+        <label>Type de corps:</label>
+        <br>
+        <div class="row justify-content-center mb-3">
+            <div class="col-4 p-2">
+                <input type="radio" name="TypeCorps" id="ecto" value="ectomorphe" formControlName="TypeCorps" required>
+                <label for="ecto"><img src="/assets/Ectomorph.jpg" width="200" height="200" style="border-radius: 10px;"></label>
+            </div>
+            <div class="col-4 p-2" >
+                <input type="radio" name="TypeCorps" id="meso" value="mesomorphe" formControlName="TypeCorps" required>
+                <label for="meso"><img src="/assets/mesomorph.jpg" width="200" height="200" style="border-radius:10px;"></label>
+            </div>
+            <div class="col-4 p-2">
+                <input type="radio" name="TypeCorps" id="endo" value="endomorphe" formControlName="TypeCorps" required>
+                <label for="endo"><img src="/assets/endomorph.jpg" width="200" height="200" style="border-radius:10px;"></label>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+            <div class="col-4">
+                <label for="Poids">Poids:</label>
+                <input id="Poids" type="number" name="poids" placeholder="Poids(Kg)*" step="0.5"  min="0" formControlName="Poids" required>
+            </div>
+            <div class="col-4">
+                <label for="Hauteur">Hauteur:</label>
+                <input id="Hauteur" type="number" name="hauteur" placeholder="Hauteur(Cm)*" step="0.5" min="0" formControlName="Hauteur" required>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+            <div class="col-4">
+                <label for="Age">Age:</label>
+                <input id="Age" type="number" name="Age" placeholder="Age*" min="0" formControlName="Age">
+            </div>
+            <div class="col-4">
+                <label for="Tel">Tel:</label>
+                <input id="Tel" type="tel" name="Tel" placeholder="Telephone*" formControlName="Tel">
+            </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+            <div class="col-5">
+                <label for="ProgramAct">Programme d'entrainement actuelle:</label>
+                <select id="ProgramAct" formControlName="ProgramAct">
+                    <option value="None">Aucun</option>
+                    <option value="PPL">PPL</option>
+                    <option value="Arnold Split">Arnlod Split</option>
+                    <option value="FullBody">FullBody</option>
+                    <option value="Upper-Lower">Upper-Lower</option> 
+                </select>
+            </div>
+        </div>
+        <label>Sexe:</label>
+        <br>
+        <div class="row justify-content-center mb-3">
+            <div class="col-4 p-2">
+                <input type="radio" name="Sexe" id="Homme" value="Homme" formControlName="Sexe" required>
+                <label for="Homme" class="btn btn-outline-secondary">Homme</label>
+            </div>
+            <div class="col-4 p-2" >
+                <input type="radio" name="Sexe" id="Femme" value="Femme" formControlName="Sexe" required>
+                <label for="Femme" class="btn btn-outline-secondary">Femme</label>
+            </div>
+        </div>
+        <label for="Objectif">L'objectif:</label>
+        <div id="Objectif">
+            <textarea name="" id="" cols="50" rows="3" formControlName="Objectif"  placeholder="Ecrire ton objectif en quelques lignes."></textarea>
+        </div>
+        <input type="submit" value="Reserver" [disabled]="ReservForm.invalid" (click)="WillCallYou()" class="btn btn-reserver mb-3">
+        </div>
+    </form>
+    <div class="col-lg-6 d-flex align-items-stretch px-0 shadow build">
+        <div  class="info-wrap w-100 p-5 img-fluid col-lg-6 d-flex align-items-stretch build" style="background-image: url(assets/beat.jpg);background-size: 650px 1030px;">
+    </div>
+

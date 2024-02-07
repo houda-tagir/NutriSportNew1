@@ -1,0 +1,10 @@
+import { repas } from './repas';
+
+
+export const RECIPE: repas[] = [
+  { name: "Salade de quinoa et de légumes grillés", text: "Faites cuire du quinoa selon les instructions sur l'emballage. Faites griller des légumes comme des poivrons, des courgettes et des carottes au four ou sur le gril. Mélangez le quinoa cuit avec les légumes grillés et ajoutez une vinaigrette légère à base d'huile d'olive, de jus de citron et d'herbes fraîches." },
+  { name: "Poulet grillé avec légumes rôtis", text: "Assaisonnez des poitrines de poulet avec du sel, du poivre et des herbes de votre choix. Faites griller le poulet jusqu'à ce qu'il soit bien cuit. Pendant ce temps, coupez des légumes comme des brocolis, des tomates cerises et des champignons, puis faites-les rôtir au four avec un filet d'huile d'olive et des épices. Servez le poulet grillé avec les légumes rôtis pour un repas copieux et nutritif." },
+  { name: "Bol de poke au saumon", text: "Coupez du saumon cru en dés et marinez-le dans une sauce à base de sauce soja, de vinaigre de riz, de gingembre et d'ail. Préparez une base de riz brun ou de quinoa cuit. Disposez le saumon mariné sur le dessus du riz, puis ajoutez des garnitures comme des avocats tranchés, des concombres, des radis et des algues nori. Arrosez le tout de sauce soja légère ou d'une sauce spéciale pour poke." },
+  { name: "Wrap aux légumes et à l'avocat", text: "Étalez de l'avocat écrasé sur une tortilla de blé entier. Ajoutez des légumes frais comme des épinards, des poivrons, des concombres et des tomates. Ajoutez une protéine maigre comme du poulet grillé ou du tofu. Enveloppez le tout et servez avec une sauce à la coriandre ou au yaourt grec." },
+  { name: "Smoothie vert à la banane et aux épinards", text: "Mélangez une banane mûre avec une poignée d'épinards frais, un peu de lait d'amande ou de yaourt grec et quelques glaçons. Ajoutez une cuillère à soupe de graines de chia ou de lin pour une dose supplémentaire de fibres et d'oméga-3. Vous pouvez également ajouter d'autres fruits comme des baies ou de l'ananas pour varier les saveurs." }
+];
