@@ -17,6 +17,8 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import { MenueComponent } from './menue/menue.component';
 import { SigninComponent } from './signin/signin.component';
 import { NutritionComponent } from './nutrition/nutrition.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -32,14 +34,17 @@ import { NutritionComponent } from './nutrition/nutrition.component';
     CallComponent,
     AcceuilComponent,
     MenueComponent,
-    SigninComponent
+    SigninComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormulaireComponent,
     routing,
-    NutritionComponent
+    NutritionComponent,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [

@@ -1,8 +1,10 @@
-.container{
+.cont{
   justify-content: center;
   display: flex;
-  background: url('/assets/Capture.png') no-repeat center center fixed;
+  background-image: url('/assets/Capture.png');
   background-size: cover;
+  margin: 0px;
+
   height: 500px;;
 }
 .btn.custom-btn{
@@ -12,7 +14,7 @@
 }
 .sport{
   height:50px ;
-  width: 1à0px;
+  width: 100px;
   font-weight: bold;
   background: linear-gradient(to right, #3059df, hsl(0, 0%, 0%));
   color: lemonchiffon;
@@ -20,7 +22,7 @@
 }
 .nutr{
   height:50px ;
-  width: 90px;
+  width: 100px;
   font-weight: bold;
   background: linear-gradient(to right, #d49619, hsl(0, 0%, 0%));
   color: lemonchiffon;

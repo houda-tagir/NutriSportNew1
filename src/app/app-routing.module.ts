@@ -8,18 +8,17 @@ import {NutritionComponent} from "./nutrition/nutrition.component";
 import {AcceuilComponent} from "./acceuil/acceuil.component";
 import {MenueComponent} from "./menue/menue.component";
 import {SigninComponent} from "./signin/signin.component";
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path:'about-us',component:AboutUsComponent},
   {path:'acceuil',component:AcceuilComponent},
   {path:'nutrition',component:NutritionComponent},
   {path:'sport',component:SportComponent},
-  {path:'',redirectTo:"/menue",pathMatch:'full'},
+  {path:'',component:AcceuilComponent},
   {path:'menue',component:MenueComponent},
-  {path:'signin',component:SigninComponent}
-
-
-
+  {path:'signin',component:SigninComponent},
+  {path:'login',component:LoginComponent},
 
 
 ];
