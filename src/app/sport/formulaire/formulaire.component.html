@@ -1,4 +1,12 @@
-<h1 class="text-center  mx-0 px-0 mb-3">Reserver une seance</h1>
+<h1 class="text-center my-5 px-0 ">C'est qoui un programmme d'entrainement?</h1>
+    <div class="container shadow" style="border-radius: 20px;">
+        <p class="mx-2 mb-3 text-center" style="text-indent: 10px;">Un programme d'entraînement est un plan structuré et organisé conçu pour aider une personne à atteindre ses objectifs en matière de condition physique, de performance sportive ou de santé. Il est généralement conçu en fonction des besoins spécifiques de l'individu, de ses capacités physiques actuelles et des objectifs qu'il souhaite atteindre.
+
+            Un programme d'entraînement peut inclure divers éléments, tels que des exercices de cardio, de musculation, de flexibilité, de mobilité, ainsi que des techniques de récupération et de nutrition. Il peut être élaboré par un entraîneur personnel, un coach sportif, un physiothérapeute ou un professionnel de la santé spécialisé dans le domaine de la condition physique.
+            
+            L'élaboration d'un programme d'entraînement efficace implique généralement l'évaluation initiale des capacités physiques de la personne, la définition des objectifs à court et à long terme, la planification des séances d'entraînement avec la sélection appropriée des exercices, des intensités et des volumes d'entraînement, ainsi que le suivi régulier des progrès réalisés pour apporter les ajustements nécessaires. Un programme d'entraînement bien conçu peut contribuer à améliorer la force, l'endurance, la flexibilité, la santé cardiovasculaire et globalement la qualité de vie.</p>
+        </div>
+<h1 class="text-center  mx-0 px-0 mb-3">Reserver un programme d'entrainement</h1>
     <div class="row border-5 animation">
     <form align="center" style="text-align: center;" class="shadow col-5 w-50" [formGroup]="ReservForm">
         <div class="container">
@@ -81,6 +89,7 @@
         <input type="submit" value="Reserver" [disabled]="ReservForm.invalid" (click)="WillCallYou()" class="btn btn-reserver mb-3">
         </div>
     </form>
+    <div *ngIf="showMessage" class="alert alert-success w-25" role="alert" style="position:absolute; z-index: 4; bottom:500px;right: 500px;text-align:center;">Le formulaire a été rempli avec succès. Notre service vous appellera bientôt.</div>
     <div class="col-lg-6 d-flex align-items-stretch px-0 shadow build">
         <div  class="info-wrap w-100 p-5 img-fluid col-lg-6 d-flex align-items-stretch build" style="background-image: url(assets/beat.jpg);background-size: 650px 1030px;">
     </div>

@@ -11,7 +11,6 @@ import { ExercicesComponent } from './sport/exercices/exercices.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NewsletterComponent } from './sport/newsletter/newsletter.component';
-import { CallComponent } from './sport/formulaire/call/call.component';
 import { routing } from './app-routing.module';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { MenueComponent } from './menue/menue.component';
@@ -30,7 +29,6 @@ import {FormsModule} from "@angular/forms";
     ExercicesComponent,
     AboutUsComponent,
     NewsletterComponent,
-    CallComponent,
     AcceuilComponent,
     MenueComponent,
     SigninComponent,

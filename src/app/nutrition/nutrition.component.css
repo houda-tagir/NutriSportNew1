@@ -26,13 +26,7 @@ body{
   color: rgb(213, 194, 187);
   text-shadow: 2px 2px 4px #59874e ;
 }
-.btn0{
-  background: rgba(175, 161, 157, 0.66);
-  border-radius: 12px;
-  margin-top: 32px;
-  border-color:  rgba(175, 161, 157, 0.66);
-  transition:  0.2s;
-}
+
 .btn0:hover {
   transform: scale(1.05);
 }

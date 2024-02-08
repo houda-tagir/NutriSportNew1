@@ -22,10 +22,18 @@ export class FormulaireComponent {
   Objectif:new FormControl(null,Validators.required),
   Sexe:new  FormControl(null,Validators.required)
   })
-  WillCallYou()
-  {
-    
-  }
+  showMessage: boolean = false;
+
+WillCallYou() {
+    if (this.ReservForm.valid) {
+        this.showMessage = true;
+        setTimeout(() => {
+            this.showMessage = false;
+            window.location.reload();
+        }, 4500);
+    }
+}
+
 
 
 }
